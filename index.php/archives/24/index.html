@@ -1,0 +1,798 @@
+
+
+
+<!DOCTYPE HTML>
+<html class="no-js bg cool-transparent" lang="zh-cmn-Hans">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta charset="UTF-8">
+    <!--IE 8浏览器的页面渲染方式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <!--默认使用极速内核：针对国内浏览器产商-->
+    <meta name="renderer" content="webkit">
+    <!--chrome Android 地址栏颜色-->
+        <meta name="theme-color" content="#3a3f51" />
+    
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+    <title>html基础 | 给你的网站加上背景音乐 - JR BLOG</title>
+            <link rel="icon" type="image/ico" href="https://gitee.com/jrcloud/cdn/raw/master/d.jpg">
+        <meta name="description" content="一般来说 在html中加入背景音乐只需要一个代码&amp;lt;audio src=&amp;quot;音乐地址&amp;quot; autoplay&amp;gt;&amp;lt;/audio&amp;gt;*注:代码中的音乐地址可以是本地..." />
+<meta name="keywords" content="html" />
+<meta name="generator" content="Typecho 1.2/18.1.29" />
+<meta name="template" content="handsome" />
+<link rel="pingback" href="../../action/xmlrpc" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../action/xmlrpc?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../action/xmlrpc?wlw" />
+
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+            <link rel="stylesheet" type="text/css" href="../../../usr/plugins/CodePrettify/static/styles/GrayMac.css" />
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({messageStyle: "none",tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+        <!-- 第三方CDN加载CSS -->
+        <link href="https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- 本地css静态资源 -->
+    <link rel="stylesheet" href="../../../usr/themes/handsome/assets/css/function.min.css?v=6.0.020191205" type="text/css" />
+    <link rel="stylesheet" href="../../../usr/themes/handsome/assets/css/handsome.min.css?v=6.0.020191205" type="text/css" />
+
+
+
+    <!--主题组件css文件加载-->
+    <link rel="stylesheet" href="../../../usr/themes/handsome/assets/css/features/jquery.fancybox.min.css?v=6.0.020191205" type="text/css" />
+            <link rel="stylesheet" href="../../../usr/themes/handsome/assets/css/features/code/vs.min.css?v=6.0.020191205" type="text/css" />
+            <link rel="stylesheet" href="../../../usr/themes/handsome/assets/css/features/coolopacity.min.css?v=6.0.020191205" type="text/css" />
+
+                <style>
+            .cool-transparent .app:before {
+                background-color: rgba(0, 0, 0, 0.3)!important;
+                filter: blur(20px);
+            }
+        </style>
+            
+    <!--引入英文字体文件-->
+        <link rel="stylesheet" href="../../../usr/themes/handsome/assets/css/font.min.css?v=6.0.020191205" type="text/css" />
+    
+    <style type="text/css">
+        
+        html.bg {
+        background: url() center center no-repeat no-repeat fixed #6A6B6F;background-size: cover;
+        }
+        .cool-transparent .off-screen+* .app-content-body {
+        background: url() center center no-repeat no-repeat fixed #6A6B6F;background-size: cover;
+        }
+@media (max-width:767px){
+    html.bg {
+        background: url() center center no-repeat no-repeat fixed #6A6B6F;background-size: cover;
+        }
+        .cool-transparent .off-screen+* .app-content-body {
+        background: url() center center no-repeat no-repeat fixed #6A6B6F;background-size: cover;
+        }
+}
+    </style>
+
+    <!--全站jquery-->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!--网站统计代码-->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5088663b399da1a550104de415bc438a";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <script src="../../../usr/themes/handsome/assets/js/features/fancyMorph.min.js"></script>
+
+
+</head>
+
+<body id="body" class="fix-padding">
+
+	<!-- aside -->
+	  
+  <div id="alllayout" class="app app-aside-fix container app-header-fixed ">  <!-- headnav -->
+      <header id="header" class="fix-padding app-header navbar box-shadow-bottom-lg" role="menu">
+      <!-- navbar header（交集处） -->
+        <div class="text-ellipsis navbar-header bg-white">
+        <button class="pull-right visible-xs" ui-toggle-class="show animated animated-lento fadeIn" target=".navbar-collapse">
+            <span class="menu-icons"><i data-feather="search"></i></span>
+        </button>
+        <button class="pull-left visible-xs" ui-toggle-class="off-screen animated" target=".app-aside" ui-scroll="app">
+            <span class="menu-icons"><i data-feather="menu"></i></span>
+        </button>
+        <!-- brand -->
+        <a href="../../../index.html" class="navbar-brand text-lt">
+                                                <i class="fontello fontello-home"></i>
+                                <span class="hidden-folded m-l-xs">JR BLOG</span>
+                    </a>
+        <!-- / brand -->
+      </div>
+      <!-- / navbar header -->
+
+      <!-- navbar collapse（顶部导航栏） -->
+    <div class="collapse pos-rlt navbar-collapse bg-white">
+        <!-- search form -->
+        <form id="searchform1" class="searchform navbar-form navbar-form-sm navbar-left shift" method="post"
+              role="search">
+          <div class="form-group">
+            <div class="input-group rounded bg-white-pure box-shadow-wrap-normal">
+              <input  autocomplete="off" id="search_input" type="search" name="s" class="transparent rounded form-control input-sm no-borders padder" required placeholder="输入关键词搜索…">
+                <!--搜索提示-->
+                <ul id="search_tips_drop" class="small-scroll-bar dropdown-menu hide" style="display: block;top: 
+                30px; left: 0px;">
+                </ul>
+              <span id="search_submit" class="transparent input-group-btn">
+                  <button  type="submit" class="transparent btn btn-sm">
+                      <span class="feathericons" id="icon-search"><i data-feather="search"></i></span>
+                      <span class="feathericons animate-spin  hide" id="spin-search"><i
+                                  data-feather="loader"></i></span>
+<!--                      <i class="fontello fontello-search" id="icon-search"></i>-->
+<!--                      <i class="animate-spin  fontello fontello-spinner hide" id="spin-search"></i>-->
+                  </button>
+              </span>
+            </div>
+          </div>
+        </form>
+          <a href="index.html" style="display: none" id="searchUrl"></a>
+        <!-- / search form -->
+                <ul class="nav navbar-nav navbar-right">
+                                              <!--闲言碎语-->
+          <li class="dropdown">
+            <a href="index.html#" data-toggle="dropdown" class="feathericons dropdown-toggle">
+                <i data-feather="twitch"></i>
+                <span class="visible-xs-inline">
+              闲言碎语              </span>
+              <span class="badge badge-sm up bg-danger pull-right-xs"></span>
+            </a>
+            <!-- dropdown -->
+            <div class="dropdown-menu w-xl animated fadeInUp">
+              <div class="panel bg-white">
+                <div class="panel-heading b-light bg-light">
+                  <strong>
+              闲言碎语                  </strong>
+                </div>
+                <div class="list-group" id="smallRecording">
+                  <a href="https://blog.jrcloud.vip/index.php//cross.html" class="list-group-item"><span class="clear block m-b-none">这是一条默认的说说，如果你看到这条动态，请去后台新建独立页面，地址填写cross,自定义模板选择时光机。具体说明请参见主题的使用攻略。<br><small class="text-muted">September 21st, 2021 a	 10:10 am</small></span></a>                </div>
+              </div>
+            </div>
+          </li>
+          <!--/闲言碎语-->
+                                </ul>
+      </div>
+      <!-- / navbar collapse -->
+  </header>
+  <!-- / headnav -->
+
+  <!--选择侧边栏的颜色-->
+  <aside id="aside" class="app-aside hidden-xs bg-white">  <!--<aside>-->
+        <div class="aside-wrap" layout="column">
+        <div class="navi-wrap scroll-y scroll-hide" flex>
+          <!-- user -->
+          <div class="clearfix hidden-xs text-center hide  show" id="aside-user">
+            <div class="dropdown wrapper vertical-wrapper">
+                <div ui-nav>
+                          <a href="../../../index.html">
+                            <span class="thumb-lg w-auto-folded avatar m-t-sm  vertical-avatar">
+                  <img src="https://gitee.com/jrcloud/cdn/raw/master/d.jpg" class="img-full img-circle normal-shadow">
+                </span>
+              </a>
+                </div>
+              <a href="index.html#" data-toggle="dropdown" class="dropdown-toggle hidden-folded  vertical-flex">
+                <span class="clear">
+                  <span class="block m-t-sm">
+                    <strong class="font-bold text-lt">JR</strong>
+                    <b class="caret"></b>
+                  </span>
+                  <span class="text-muted text-xs block">博主QQ:676784163</span>
+                </span>
+              </a>
+              <!-- dropdown -->
+              <ul class="dropdown-menu animated fadeInRight w hidden-folded no-padder">
+                <li class="wrapper b-b m-b-sm bg-info m-n">
+                  <span class="arrow top hidden-folded arrow-info"></span>
+                  <div>
+                                                  <p>早上好，永远年轻，永远热泪盈眶</p>
+                                  </div>
+                  <div class="progress progress-xs m-b-none dker">
+                    <div class="progress-bar bg-white" data-toggle="tooltip" data-original-title="时间已经度过41.67%" style="width: 41.67%"></div>
+                  </div>
+                </li>
+              </ul>
+              <!-- / dropdown -->
+            </div>
+          </div>
+          <!-- / user -->
+
+          <!-- nav -->
+          <nav ui-nav class="navi clearfix">
+            <ul class="nav">
+             <!--index-->
+                <div class="line dk hidden-folded"></div>
+                <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                <span>导航</span>
+              </li>
+                                          <!--主页-->
+              <li>
+                <a href="../../../index.html" class="auto">
+                    <span class="nav-icon"><i data-feather="home"></i></span>
+                    <span>首页</span>
+                </a>
+              </li>
+              <!-- /主页 -->
+                                                        </ul>
+          </nav>
+          <!-- nav -->
+        </div>
+          <!--end of .navi-wrap-->
+          <!--left_footer-->
+          
+      </div><!--.aside-wrap-->
+  </aside>
+<!-- content -->
+<div id="content" class="app-content">
+    <!--loading animate-->
+    <div id="loading" class="butterbar active hide">
+            <span class="bar"></span>
+        </div>	<!-- / aside -->
+<style>
+    #post-content{
+        font-size: 14px;
+    }
+</style>
+<!-- <div id="content" class="app-content"> -->
+   <a class="off-screen-toggle hide"></a>
+   <main class="app-content-body animated fadeIn">
+    <div class="hbox hbox-auto-xs hbox-auto-sm">
+    <!--文章-->
+     <div class="col center-part">
+         <!--生成分享图片必须的HTML结构-->
+             <!--标题下的一排功能信息图标：作者/时间/浏览次数/评论数/分类-->
+      
+        <header id="small_widgets" class="bg-light lter wrapper-md">
+             <h1 class="entry-title m-n font-thin text-black l-h">html基础 | 给你的网站加上背景音乐<a class="plus-font-size" data-toggle="tooltip" data-original-title="点击改变文章字体大小"><i data-feather="type"></i></a><a data-morphing="" id="morphing" data-src="#morphing-content" href="javascript:;" class="read_mode superscript m-l-sm" 
+data-toggle="tooltip" data-placement="right" data-original-title="阅读模式"><i data-feather="book-open"></i></a></h1>       <!--文章标题下面的小部件-->
+                  <ul  class="entry-meta text-muted list-inline m-b-none small
+             post-head-icon">
+             <!--作者-->
+             <li class="meta-author"><span class="post-icons"><i data-feather="user"></i></span><span
+                         class="sr-only">博主：</span> <a class="meta-value" href="../../author/1/index.html" rel="author"> jrcloud</a></li>
+             <!--发布时间-->
+             <li class="meta-date"><span class="post-icons"><i data-feather="clock"></i></span><span class="sr-only">发布时间：</span><time class="meta-value">2020 年 09 月 15 日</time></li>
+             <!--浏览数-->
+             <li class="meta-views"><span class="post-icons"><i data-feather="eye"></i></span><span class="meta-value">496次浏览</span></li>
+                              <!--评论数-->
+                 <li class="meta-comments"><span class="post-icons"><i data-feather="message-circle"></i></span><a
+                             class="meta-value" href="index.html#comments">暂无评论</a></li>
+             
+             <!--文字数目-->
+             <li class="meta-word"><span class="post-icons"><i data-feather="pen-tool"></i></span><span class="meta-value">794字数</span></li>
+             <!--分类-->
+             <li class="meta-categories"><span class="post-icons"><i data-feather="hash"></i></span><span class="sr-only">分类：</span> <span class="meta-value"><a href="../../category/网络小技巧/index.html">网络小技巧</a></span></li>
+         </ul>
+      </header>
+      <div class="wrapper-md" id="post-panel">
+	   <ol class="breadcrumb bg-white-pure" itemscope=""><li>
+                 <a href="../../../index.html" itemprop="breadcrumb" title="返回首页" data-toggle="tooltip"><span class="home-icons"><i data-feather="home"></i></span>首页</a>
+             </li><li class="active">正文&nbsp;&nbsp;</li></ol>       <!--博客文章样式 begin with .blog-post-->
+       <div id="postpage" class="blog-post">
+        <article class="single-post panel">
+        <!--文章页面的头图-->
+                 <!--文章内容-->
+         <div id="post-content" class="wrapper-lg">
+          <div class="entry-content l-h-2x">
+          <p>一般来说 在html中加入背景音乐只需要一个代码</p><pre><code>&lt;audio src=&quot;音乐地址&quot; autoplay&gt;&lt;/audio&gt;
+</code></pre><p>*注:代码中的音乐地址可以是本地 也可以是外部链接<br><strong>此代码建议放在<code>&lt;/body&gt;</code>前</strong><br>效果样例:<span class="external-link"><a href="https://file.jrcloud.vip" target="_blank">点击进入<i data-feather='external-link'></i></a></span><br>为了方便站长们操作 我这里在我的服务器上上传了几个音乐(直链) 可以当背景音乐 免除上传麻烦<br><strong>1.蒲公英的约定</strong><br>只需添加代码<code>&lt;audio src=&quot;http://api.jrcloud.vip/pgyer.mp3&quot; autoplay&gt;&lt;/audio&gt;</code><br>背景音乐试听:<span class="external-link"><a href="http://api.jrcloud.vip/pgyer.mp3" target="_blank">点击试听<i data-feather='external-link'></i></a></span><br><strong>2.搁浅</strong><br>只需添加代码<code>&lt;audio src=&quot;http://api.jrcloud.vip/geqian.mp3&quot; autoplay&gt;&lt;/audio&gt;</code><br>背景音乐试听:<span class="external-link"><a href="http://api.jrcloud.vip/geqian.mp3" target="_blank">点击试听<i data-feather='external-link'></i></a></span><br><strong>3.晴天</strong><br>只需添加代码<code>&lt;audio src=&quot;http://api.jrcloud.vip/sunny.mp3&quot; autoplay&gt;&lt;/audio&gt;</code><br>背景音乐试听:<span class="external-link"><a href="http://api.jrcloud.vip/sunny.mp3" target="_blank">点击试听<i data-feather='external-link'></i></a></span><br><strong>4.夜曲</strong><br>只需添加代码<code>&lt;audio src=&quot;http://api.jrcloud.vip/night.mp3&quot; autoplay&gt;&lt;/audio&gt;</code><br>背景音乐试听:<span class="external-link"><a href="http://api.jrcloud.vip/night.mp3" target="_blank">点击试听<i data-feather='external-link'></i></a></span></p>          </div>
+                          <!--文章的页脚部件：打赏和其他信息的输出-->
+             
+             <div class="show-foot">
+                 <div class="notebook">
+                     <i class="fontello fontello-clock-o"></i>
+                     <span>最后修改：2021 年 06 月 11 日 12 : 09  AM</span>
+                 </div>
+                 <div class="copyright" data-toggle="tooltip" data-html="true" data-original-title="转载请保留本文转载地址，著作权归作者所有"><span>© 允许规范转载</span>
+                 </div>
+             </div>
+                                      <!--打赏模块-->
+                 
+             <div class="support-author">
+                 <button data-toggle="modal" data-target="#myModal" class="btn btn-pay btn-danger btn-rounded"><i class="fontello fontello-wallet" aria-hidden="true"></i>&nbsp;赞赏</button>
+                 <div class="mt20 text-center article__reward-info">
+                     <span class="mr10">如果觉得我的文章对你有用，请随意赞赏</span>
+                 </div>
+             </div>
+             <div id="myModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                 <div class="modal-dialog modal-sm" role="document">
+                     <div class="modal-content">
+                         <div class="modal-header">
+                             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                             <h4 class="modal-title">赞赏作者</h4>
+                         </div>
+                         <div class="modal-body">
+                             <p class="text-center article__reward"> <strong class="article__reward-text">扫一扫支付</strong> </p>
+                             <div class="tab-content"><img noGallery aria-labelledby="alipay-tab" class="pay-img tab-pane fade in active" id="alipay_author" role="tabpanel" src="https://gitee.com/jrcloud/cdn/raw/master/pay.jpg" /><img noGallery aria-labelledby="wechatpay-tab" class="pay-img tab-pane fade" id="wechatpay_author" role="tabpanel" src="https://gitee.com/jrcloud/cdn/raw/master/pay.png" /></div>
+                             <div class="article__reward-border mb20 mt10"></div>
+
+                             <div class="text-center" role="tablist"><div class="pay-button" role="presentation" class="active"><button  href="#alipay_author" id="alipay-tab" aria-controls="alipay_author" role="tab" data-toggle="tab" class="btn m-b-xs m-r-xs btn-info"><i class="iconfont icon-alipay" aria-hidden="true"></i><span>&nbsp;支付宝支付</span></button>
+                                 </div><div class="pay-button" role="presentation"><button href="#wechatpay_author" id="wechatpay-tab" aria-controls="wechatpay_author" role="tab" data-toggle="tab" class="btn m-b-xs btn-success"><i class="iconfont icon-wechatpay" aria-hidden="true"></i><span>&nbsp;微信支付</span></button>
+                                 </div></div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+                                  <!--/文章的页脚部件：打赏和其他信息的输出-->
+         </div>
+        </article>
+       </div>
+       <!--上一篇&下一篇-->
+       <nav class="m-t-lg m-b-lg">
+        <ul class="pager">
+        <li class="next"> <a class="box-shadow-wrap-normal" href="../23/index.html" title="UTM常见错误及解决方案" data-toggle="tooltip"> 
+下一篇 </a></li>   <li class="previous"> <a class="box-shadow-wrap-normal" href="../36/index.html" title="使用虚拟主机免费搭建一个属于自己的博客~" data-toggle="tooltip"> 上一篇 </a></li>
+        </ul>
+       </nav>
+       <!--评论-->
+        
+            <style>
+            textarea#comment{
+                background-image: url('https://gitee.com/jrcloud/cdn/raw/master/d.jpg');
+                background-color: #ffffff;
+                transition: all 0.25s ease-in-out 0s;
+            }
+            textarea#comment:focus {
+                background-position-y: 105px;
+                transition: all 0.25s ease-in-out 0s;
+            }
+        </style>
+    
+    
+    <div id="comments">
+        
+                    <!--评论列表-->
+                    
+        <!--如果允许评论，会出现评论框和个人信息的填写-->
+                    <div id="respond-post-24" class="respond comment-respond no-borders">
+
+                <h4 id="reply-title" class="comment-reply-title m-t-lg m-b">发表评论                    <small><i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" title="请文明发言"></i>
+                    </small>
+                    <small class="cancel-comment-reply">
+                        <a id="cancel-comment-reply-link" href="index.html#respond-post-24" rel="nofollow" style="display:none" onclick="return TypechoComment.cancelReply();">取消回复</a>                    </small>
+                </h4>
+                <form id="comment_form" method="post" action="https://blog.jrcloud.vip/index.php/archives/24/comment"  class="comment-form" role="form">
+                    <div class="comment-form-comment form-group">
+                        <label class="padder-v-sm" for="comment">评论                            <span class="required text-danger">*</span></label>
+                        <textarea id="comment" class="textarea form-control OwO-textarea" name="text" rows="5" placeholder="说点什么吧……" onkeydown="if(event.ctrlKey&&event.keyCode==13){document.getElementById('submit').click();return false};"></textarea>
+                        <div class="OwO padder-v-sm"></div>
+                        <div class="secret_comment" id="secret_comment" data-toggle="tooltip"
+                        data-original-title="开启该功能，您的评论仅作者和评论双方可见">
+                            <label class="secret_comment_label control-label">私密评论</label>
+                            <div class="secret_comment_check">
+                                <label class="i-switch i-switch-sm bg-dark m-b-ss m-r">
+                                    <input type="checkbox" id="secret_comment_checkbox">
+                                    <i></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--判断是否登录-->
+                                                                <div id="author_info" class="row row-sm">
+                                                        <div class="comment-form-author form-group col-sm-6 col-md-4">
+                                <label for="author">名称                                    <span class="required text-danger">*</span></label>
+                                <div>
+                                                                        <img class="author-avatar" src="https://gravatar.zeruns.tech/avatar//d41d8cd98f00b204e9800998ecf8427e?s=65&r=G&d=" nogallery/>
+                                <input id="author" class="form-control" name="author" type="text" value="" maxlength="245" placeholder="姓名或昵称">
+                                </div>
+                            </div>
+
+                            <div class="comment-form-email form-group col-sm-6 col-md-4">
+                                <label for="email">邮箱                                    <span class="required text-danger">*</span>
+                                </label>
+                                <input type="text" name="mail" id="mail" class="form-control" placeholder="邮箱 (必填,将保密)" value="" />
+                                <input type="hidden" name="receiveMail" id="receiveMail" value="yes" />
+                            </div>
+
+                            <div class="comment-form-url form-group col-sm-12 col-md-4">
+                                <label for="url">地址</label>
+                                <input id="url" class="form-control" name="url" type="url" value="" maxlength="200" placeholder="网站或博客"></div>
+                        </div>
+                        <html>
+<p>由于本站已备案 你所发送的评论将审核 是否同意(填"是"或"否")</p>
+<input type="text" name="fname" />
+<p></p>
+</html>
+                        <!--提交按钮-->
+                        <div class="form-group">
+                            <button type="submit" name="submit" id="submit" class="submit btn-rounded box-shadow-wrap-lg btn-gd-primary padder-lg">
+                                <span>发表评论</span>
+                                <span class="text-active">提交中...</span>
+                            </button>
+                            <i class="animate-spin fontello fontello-spinner hide" id="spin"></i>
+                            <input type="hidden" name="comment_post_ID" id="comment_post_ID">
+                            <input type="hidden" name="comment_parent" id="comment_parent">
+                        </div>
+                </form>
+            </div>
+        
+            </div>
+
+
+      </div>
+     </div>
+     <!--文章右侧边栏开始-->
+      
+       <!--文章右侧边栏结束-->
+    </div>
+   </main>
+
+
+    <div id="morphing-content" class="hidden read_mode_article">
+        <div class="page">
+            <h1 class="title">html基础 | 给你的网站加上背景音乐</h1>
+            <div class="metadata singleline"><a href="index.html#" rel="author" class="byline">jrcloud</a>&nbsp;•&nbsp;<span class="delimiter"></span><time class="date">2020 年 09 月 15 日</time></div>
+            <p>一般来说 在html中加入背景音乐只需要一个代码</p><pre><code>&lt;audio src=&quot;音乐地址&quot; autoplay&gt;&lt;/audio&gt;
+</code></pre><p>*注:代码中的音乐地址可以是本地 也可以是外部链接<br><strong>此代码建议放在<code>&lt;/body&gt;</code>前</strong><br>效果样例:<span class="external-link"><a href="https://file.jrcloud.vip" target="_blank">点击进入<i data-feather='external-link'></i></a></span><br>为了方便站长们操作 我这里在我的服务器上上传了几个音乐(直链) 可以当背景音乐 免除上传麻烦<br><strong>1.蒲公英的约定</strong><br>只需添加代码<code>&lt;audio src=&quot;http://api.jrcloud.vip/pgyer.mp3&quot; autoplay&gt;&lt;/audio&gt;</code><br>背景音乐试听:<span class="external-link"><a href="http://api.jrcloud.vip/pgyer.mp3" target="_blank">点击试听<i data-feather='external-link'></i></a></span><br><strong>2.搁浅</strong><br>只需添加代码<code>&lt;audio src=&quot;http://api.jrcloud.vip/geqian.mp3&quot; autoplay&gt;&lt;/audio&gt;</code><br>背景音乐试听:<span class="external-link"><a href="http://api.jrcloud.vip/geqian.mp3" target="_blank">点击试听<i data-feather='external-link'></i></a></span><br><strong>3.晴天</strong><br>只需添加代码<code>&lt;audio src=&quot;http://api.jrcloud.vip/sunny.mp3&quot; autoplay&gt;&lt;/audio&gt;</code><br>背景音乐试听:<span class="external-link"><a href="http://api.jrcloud.vip/sunny.mp3" target="_blank">点击试听<i data-feather='external-link'></i></a></span><br><strong>4.夜曲</strong><br>只需添加代码<code>&lt;audio src=&quot;http://api.jrcloud.vip/night.mp3&quot; autoplay&gt;&lt;/audio&gt;</code><br>背景音乐试听:<span class="external-link"><a href="http://api.jrcloud.vip/night.mp3" target="_blank">点击试听<i data-feather='external-link'></i></a></span></p>
+        </div>
+    </div>
+    <script>
+        try {
+            $("[data-morphing]").fancyMorph({
+                hash : 'morphing'
+            });
+        }catch (e){
+
+        }
+
+            </script>
+<!-- footer -->
+	<script type="text/javascript">
+(function () {
+    window.TypechoComment = {
+        dom : function (id) {
+            return document.getElementById(id);
+        },
+    
+        create : function (tag, attr) {
+            var el = document.createElement(tag);
+        
+            for (var key in attr) {
+                el.setAttribute(key, attr[key]);
+            }
+        
+            return el;
+        },
+
+        reply : function (cid, coid) {
+            var comment = this.dom(cid), parent = comment.parentNode,
+                response = this.dom('respond-post-24'), input = this.dom('comment-parent'),
+                form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
+                textarea = response.getElementsByTagName('textarea')[0];
+
+            if (null == input) {
+                input = this.create('input', {
+                    'type' : 'hidden',
+                    'name' : 'parent',
+                    'id'   : 'comment-parent'
+                });
+
+                form.appendChild(input);
+            }
+
+            input.setAttribute('value', coid);
+
+            if (null == this.dom('comment-form-place-holder')) {
+                var holder = this.create('div', {
+                    'id' : 'comment-form-place-holder'
+                });
+
+                response.parentNode.insertBefore(holder, response);
+            }
+
+            comment.appendChild(response);
+            this.dom('cancel-comment-reply-link').style.display = '';
+
+            if (null != textarea && 'text' == textarea.name) {
+                textarea.focus();
+            }
+
+            return false;
+        },
+
+        cancelReply : function () {
+            var response = this.dom('respond-post-24'),
+            holder = this.dom('comment-form-place-holder'), input = this.dom('comment-parent');
+
+            if (null != input) {
+                input.parentNode.removeChild(input);
+            }
+
+            if (null == holder) {
+                return true;
+            }
+
+            this.dom('cancel-comment-reply-link').style.display = 'none';
+            holder.parentNode.insertBefore(response, holder);
+            return false;
+        }
+    };
+})();
+</script>
+<script type="text/javascript">
+var registCommentEvent = function() {
+    var event = document.addEventListener ? {
+        add: 'addEventListener',
+        focus: 'focus',
+        load: 'DOMContentLoaded'
+    } : {
+        add: 'attachEvent',
+        focus: 'onfocus',
+        load: 'onload'
+    };
+    var r = document.getElementById('respond-post-24');
+        
+    if (null != r) {
+        var forms = r.getElementsByTagName('form');
+        if (forms.length > 0) {
+            var f = forms[0], textarea = f.getElementsByTagName('textarea')[0], added = false;
+
+            if (null != textarea && 'text' == textarea.name) {
+                textarea[event.add](event.focus, function () {
+                    if (!added) {
+                        var input = document.createElement('input');
+                        input.type = 'hidden';
+                        input.name = '_';
+                            input.value = (function () {
+    var _ploDjGb = '7'//'Uo'
++//'Iw'
+'eb'+'2c'//'WD'
++//'cO'
+'cO'+//'jrZ'
+'37d'+//'c0'
+'042'+'80'//'dey'
++//'gT'
+'79'+//'39m'
+'983'+'P'//'P'
++'lA'//'lA'
++//'kb'
+'94'+//'1Xz'
+'7d'+//'T'
+'T'+//'ES'
+'4c'+//'fW'
+'b6'+//'cP'
+'c'+/* 'pZ'//'pZ' */''+'3b1'//'b'
++''///*'wD'*/'wD'
++//'u'
+'u'+//'y'
+'6f', _c0Qd = [[5,7],[18,19],[18,20],[22,23],[30,31]];
+    
+    for (var i = 0; i < _c0Qd.length; i ++) {
+        _ploDjGb = _ploDjGb.substring(0, _c0Qd[i][0]) + _ploDjGb.substring(_c0Qd[i][1]);
+    }
+
+    return _ploDjGb;
+})();
+                    
+                        f.appendChild(input);
+                        
+                        input = document.createElement('input');
+                        input.type = 'hidden';
+                        input.name = 'checkReferer';
+                        input.value = 'false';
+                        
+                        f.appendChild(input);
+                        
+
+                        added = true;
+                    }
+                });
+            }
+        }
+    }
+};
+</script></div><!-- /content -->
+  <footer id="footer" class="app-footer" role="footer">
+    <div class="wrapper bg-light">
+      <span class="pull-right hidden-xs text-ellipsis">
+            Powered by <a target="_blank" href="http://www.typecho.org">Typecho</a>&nbsp;|&nbsp;Theme by <a target="_blank"
+                                                                                                     href="https://www.yunziyuan.com.cn/archives/489/">handsome</a>
+      </span>
+        <span class="text-ellipsis">&copy;&nbsp;2021 Copyright&nbsp;<a href="../../../index.html">JRCloud </a>/
+<font>浙ICP备2020031873号 </font></span>
+    </div>
+      <!--可以去除主题版权信息，最好保留版权信息或者添加主题信息到友链，谢谢你的理解-->
+            <style>
+          .topButton>.btn{
+              top: 0;
+          }
+          </style>
+      
+      <div class="topButton panel panel-default">
+          <button id="goToTop" class="btn btn-default no-shadow pos-abt hide  border-radius-half-left"
+                  data-toggle="tooltip" data-placement="left" data-original-title="返回顶部">
+              <i class="fontello fontello-chevron-circle-up" aria-hidden="true"></i>
+          </button>
+      </div>
+  </footer>
+  </div><!--end of .app app-header-fixed-->
+
+<script type="text/javascript">
+	(function(){
+		var pres = document.querySelectorAll('pre');
+		var lineNumberClassName = 'line-numbers';
+		pres.forEach(function (item, index) {
+			item.className = item.className == '' ? lineNumberClassName : item.className + ' ' + lineNumberClassName;
+		});
+	})();
+</script>
+<script type="text/javascript" src="../../../usr/plugins/CodePrettify/static/clipboard.min.js"></script>
+<script type="text/javascript" src="../../../usr/plugins/CodePrettify/static/prism.js"></script>
+
+
+        <script type="text/javascript" src="https://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script><canvas id="fireworks" style="position:fixed;left:0;top:0;pointer-events:none;"></canvas><script type="text/javascript" src="https://cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script><script type='text/javascript' src='../../../usr/plugins/HoerMouse/static/js/fireworks.js'></script><script>console.log('%c 炫彩鼠标插件 https://gitee.com/HoeXhe/HoerMouse %c www.hoehub.com 😊 HoerMouse By Hoe ', 'font-family:\'Microsoft YaHei\',\'SF Pro Display\',Roboto,Noto,Arial,\'PingFang SC\',sans-serif;color:white;background:#ffa099;padding:5px 0;', 'font-family:\'Microsoft YaHei\',\'SF Pro Display\',Roboto,Noto,Arial,\'PingFang SC\',sans-serif;color:#ffa099;background:#404040;padding:5px 0;'); // 你能留下我的信息, 我会很高兴的 ^_^</script>
+    <!--定义全局变量-->
+    <script type="text/javascript">
+        window['LocalConst'] = {
+            COMMENT_NAME_INFO: '必须填写昵称或姓名',
+            COMMENT_EMAIL_INFO: '必须填写电子邮箱地址',
+            COMMENT_EMAIL_LEGAL_INFO: '邮箱地址不合法',
+            COMMENT_CONTENT_INFO: '必须填写评论内容',
+            COMMENT_SUBMIT_ERROR: '提交失败，请重试！',
+            COMMENT_CONTENT_LEGAL_INFO: '提交失败,评论被拦截，可能发言太快或内容不符合规则',
+
+            LOGIN_USERNAME_INFO: '必须填写用户名',
+            LOGIN_PASSWORD_INFO: '请填写密码',
+            LOGIN_SUBMIT_ERROR: '登录失败，请重新登录',
+            LOGIN_SUBMIT_INFO: '用户名或者密码错误，请重试',
+            LOGIN_SUBMIT_SUCCESS: '登录成功',
+            CLICK_TO_REFRESH: '点击以刷新页面',
+            LOGOUT_SUCCESS_REFRESH: '退出成功，正在刷新当前页面',
+
+            LOGOUT_ERROR: '退出失败，请重试',
+            LOGOUT_SUCCESS: '退出成功',
+
+            SUBMIT_PASSWORD_INFO: '密码错误，请重试',
+            COMMENT_TITLE: '评论通知',
+            LOGIN_TITLE: '登录通知',
+            ChANGYAN_APP_KEY: '',
+            CHANGYAN_CONF: '',
+
+            COMMENT_SYSTEM: '0',
+            COMMENT_SYSTEM_ROOT: '0',
+            COMMENT_SYSTEM_CHANGYAN: '1',
+            COMMENT_SYSTEM_OTHERS: '2',
+            EMOJI: '表情',
+            IS_PJAX: '1',
+            IS_PAJX_COMMENT: '1',
+            BASE_SCRIPT_URL: 'https://blog.jrcloud.vip/usr/themes/handsome/',
+            BLOG_URL: 'https://blog.jrcloud.vip/',
+            BLOG_URL_PHP: 'https://blog.jrcloud.vip/index.php/',
+            THEME_COLOR: '14',
+            THEME_COLOR_EDIT: 'white-white-white',
+            THEME_HEADER_FIX: '1',
+            THEME_ASIDE_FIX: '1',
+            THEME_ASIDE_FOLDED: '',
+            THEME_ASIDE_DOCK: '',
+            THEME_CONTAINER_BOX: '1',
+            THEME_HIGHLIGHT_CODE: '1',
+            THEME_TOC: '',
+            TOC_TITLE: '文章目录',
+            HEADER_FIX: '固定头部',
+            ASIDE_FIX: '固定导航',
+            ASIDE_FOLDED: '折叠导航',
+            ASIDE_DOCK: '置顶导航',
+            CONTAINER_BOX: '盒子模型',
+            OFF_SCROLL_HEIGHT: '50',
+            COMMENT_REJECT_PLACEHOLDER: '居然什么也不说，哼',
+            COMMENT_PLACEHOLDER: '说点什么吧……',
+            SHOW_SETTING_BUTTON: '',
+            THEME_VERSION: '6.0.020191205',
+
+            OPERATION_NOTICE: '操作通知',
+            SCREENSHOT_BEGIN: '正在生成当前页面截图……',
+            SCREENSHOT_NOTICE: '点击顶部下载按钮保存当前卡片',
+            SCREENSHORT_ERROR: '由于图片跨域原因导致截图失败',
+            SCREENSHORT_SUCCESS: '截图成功',
+            MUSIC_NOTICE: '播放通知',
+            MUSIC_FAILE: '当前音乐地址无效，自动为您播放下一首',
+            MUSIC_FAILE_END: '当前音乐地址无效',
+            MUSIC_LIST_SUCCESS: '歌单歌曲加载成功',
+            CDN_NAME: '',
+            LAZY_LOAD: ''
+        };
+
+    </script>
+
+
+
+<!--CDN加载-->
+<script src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+    <script src="../../../usr/themes/handsome/assets/js/features/jquery.pjax.min.js" type="text/javascript"></script>
+    <script>
+        $(document).pjax('a[href^="https://blog.jrcloud.vip/"]:not(a[target="_blank"], a[no-pjax])', {
+            container: '#content',
+            fragment: '#content',
+            timeout: 8000
+        }).on('pjax:send',function () {
+                        $('#loading').removeClass('hide');
+                    }).on('pjax:click', function() {
+
+            window['Page'].doPJAXClickAction();
+            
+                        $('body,html').animate({scrollTop:0},100);
+            
+
+        }).on('pjax:complete', function() {
+            window['Page'].doPJAXCompleteAction();
+            if ($(".post-position").length > 0){
+                window['Page'].doPJAXCompletePostAction();
+            }
+                                    $('#loading').addClass('hide');
+            
+                                    MathJax.Hub.Queue(["Typeset",MathJax.Hub,"body"]);
+            
+
+        })
+    </script>
+
+
+<!--主题组件js加载-->
+
+
+
+<!--pjax动画组件-->
+
+
+<script src="../../../usr/themes/handsome/assets/js/features/feather.min.js?v=6.0.020191205"></script>
+
+    <!--maxJax公式组件-->
+        <script src="https://cdn.staticfile.org/mathjax/2.7.0/MathJax.js" type="text/javascript"></script>
+    <script src="https://cdn.staticfile.org/mathjax/2.7.0/config/TeX-AMS-MML_SVG.js" type="text/javascript"></script>
+
+
+
+<!--lightgallery必备组件-->
+<script src="../../../usr/themes/handsome/assets/js/features/jquery.fancybox.min.js?v=6.0.020191205"></script>
+<script src="../../../usr/themes/handsome/assets/js/features/easypiechart.min.js?v=6.0.020191205"></script>
+
+
+    <!--component/comments.php 页面必需js（只有选择了原生评论的时候才会加载）-->
+    <script src="../../../usr/themes/handsome/assets/js/features/OwO.min.js?v=6.0.020191205"></script>
+    <!--component/comments.php 必需js结束-->
+
+
+<!--主题组件js加载结束-->
+
+<!--主题核心js-->
+    <script src="../../../usr/themes/handsome/assets/js/function.min.js?v=6.0.020191205"></script>
+    <script src="../../../usr/themes/handsome/assets/js/core.min.js?v=6.0.020191205"></script>
+
+
+
+
+    <script type="text/javascript">
+            </script>
+
+
+</body>
+</html><!--html end-->
+  	<!-- / footer -->
+
+

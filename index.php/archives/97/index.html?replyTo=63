@@ -1,0 +1,1274 @@
+
+
+
+<!DOCTYPE HTML>
+<html class="no-js bg cool-transparent" lang="zh-cmn-Hans">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta charset="UTF-8">
+    <!--IE 8浏览器的页面渲染方式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <!--默认使用极速内核：针对国内浏览器产商-->
+    <meta name="renderer" content="webkit">
+    <!--chrome Android 地址栏颜色-->
+        <meta name="theme-color" content="#3a3f51" />
+    
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+    <title>[首发]小米小爱老师使用ankidroid播放视频(无需电脑) - JR BLOG</title>
+            <link rel="icon" type="image/ico" href="https://gitee.com/jrcloud/cdn/raw/master/d.jpg">
+        <meta name="description" content="无需电脑的ankidroid播放视频方法~新鲜出炉 最新内测仍可用[截止2021.5.3]教程如下:第一步先在手机上下载好视频(1GB以内)然后将扩展名改成mp3然后用自带的文件传输导入第二步打..." />
+<meta name="generator" content="Typecho 1.2/18.1.29" />
+<meta name="template" content="handsome" />
+<link rel="pingback" href="../../action/xmlrpc" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../action/xmlrpc?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../action/xmlrpc?wlw" />
+
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+            <link rel="stylesheet" type="text/css" href="../../../usr/plugins/CodePrettify/static/styles/GrayMac.css" />
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({messageStyle: "none",tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+        <!-- 第三方CDN加载CSS -->
+        <link href="https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- 本地css静态资源 -->
+    <link rel="stylesheet" href="../../../usr/themes/handsome/assets/css/function.min.css?v=6.0.020191205" type="text/css" />
+    <link rel="stylesheet" href="../../../usr/themes/handsome/assets/css/handsome.min.css?v=6.0.020191205" type="text/css" />
+
+
+
+    <!--主题组件css文件加载-->
+    <link rel="stylesheet" href="../../../usr/themes/handsome/assets/css/features/jquery.fancybox.min.css?v=6.0.020191205" type="text/css" />
+            <link rel="stylesheet" href="../../../usr/themes/handsome/assets/css/features/code/vs.min.css?v=6.0.020191205" type="text/css" />
+            <link rel="stylesheet" href="../../../usr/themes/handsome/assets/css/features/coolopacity.min.css?v=6.0.020191205" type="text/css" />
+
+                <style>
+            .cool-transparent .app:before {
+                background-color: rgba(0, 0, 0, 0.3)!important;
+                filter: blur(20px);
+            }
+        </style>
+            
+    <!--引入英文字体文件-->
+        <link rel="stylesheet" href="../../../usr/themes/handsome/assets/css/font.min.css?v=6.0.020191205" type="text/css" />
+    
+    <style type="text/css">
+        
+        html.bg {
+        background: url() center center no-repeat no-repeat fixed #6A6B6F;background-size: cover;
+        }
+        .cool-transparent .off-screen+* .app-content-body {
+        background: url() center center no-repeat no-repeat fixed #6A6B6F;background-size: cover;
+        }
+@media (max-width:767px){
+    html.bg {
+        background: url() center center no-repeat no-repeat fixed #6A6B6F;background-size: cover;
+        }
+        .cool-transparent .off-screen+* .app-content-body {
+        background: url() center center no-repeat no-repeat fixed #6A6B6F;background-size: cover;
+        }
+}
+    </style>
+
+    <!--全站jquery-->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!--网站统计代码-->
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5088663b399da1a550104de415bc438a";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <script src="../../../usr/themes/handsome/assets/js/features/fancyMorph.min.js"></script>
+
+
+</head>
+
+<body id="body" class="fix-padding">
+
+	<!-- aside -->
+	  
+  <div id="alllayout" class="app app-aside-fix container app-header-fixed ">  <!-- headnav -->
+      <header id="header" class="fix-padding app-header navbar box-shadow-bottom-lg" role="menu">
+      <!-- navbar header（交集处） -->
+        <div class="text-ellipsis navbar-header bg-white">
+        <button class="pull-right visible-xs" ui-toggle-class="show animated animated-lento fadeIn" target=".navbar-collapse">
+            <span class="menu-icons"><i data-feather="search"></i></span>
+        </button>
+        <button class="pull-left visible-xs" ui-toggle-class="off-screen animated" target=".app-aside" ui-scroll="app">
+            <span class="menu-icons"><i data-feather="menu"></i></span>
+        </button>
+        <!-- brand -->
+        <a href="../../../index.html" class="navbar-brand text-lt">
+                                                <i class="fontello fontello-home"></i>
+                                <span class="hidden-folded m-l-xs">JR BLOG</span>
+                    </a>
+        <!-- / brand -->
+      </div>
+      <!-- / navbar header -->
+
+      <!-- navbar collapse（顶部导航栏） -->
+    <div class="collapse pos-rlt navbar-collapse bg-white">
+        <!-- search form -->
+        <form id="searchform1" class="searchform navbar-form navbar-form-sm navbar-left shift" method="post"
+              role="search">
+          <div class="form-group">
+            <div class="input-group rounded bg-white-pure box-shadow-wrap-normal">
+              <input  autocomplete="off" id="search_input" type="search" name="s" class="transparent rounded form-control input-sm no-borders padder" required placeholder="输入关键词搜索…">
+                <!--搜索提示-->
+                <ul id="search_tips_drop" class="small-scroll-bar dropdown-menu hide" style="display: block;top: 
+                30px; left: 0px;">
+                </ul>
+              <span id="search_submit" class="transparent input-group-btn">
+                  <button  type="submit" class="transparent btn btn-sm">
+                      <span class="feathericons" id="icon-search"><i data-feather="search"></i></span>
+                      <span class="feathericons animate-spin  hide" id="spin-search"><i
+                                  data-feather="loader"></i></span>
+<!--                      <i class="fontello fontello-search" id="icon-search"></i>-->
+<!--                      <i class="animate-spin  fontello fontello-spinner hide" id="spin-search"></i>-->
+                  </button>
+              </span>
+            </div>
+          </div>
+        </form>
+          <a href="index.html?replyTo=63" style="display: none" id="searchUrl"></a>
+        <!-- / search form -->
+                <ul class="nav navbar-nav navbar-right">
+                                              <!--闲言碎语-->
+          <li class="dropdown">
+            <a href="index.html?replyTo=63#" data-toggle="dropdown" class="feathericons dropdown-toggle">
+                <i data-feather="twitch"></i>
+                <span class="visible-xs-inline">
+              闲言碎语              </span>
+              <span class="badge badge-sm up bg-danger pull-right-xs"></span>
+            </a>
+            <!-- dropdown -->
+            <div class="dropdown-menu w-xl animated fadeInUp">
+              <div class="panel bg-white">
+                <div class="panel-heading b-light bg-light">
+                  <strong>
+              闲言碎语                  </strong>
+                </div>
+                <div class="list-group" id="smallRecording">
+                  <a href="https://blog.jrcloud.vip/index.php//cross.html" class="list-group-item"><span class="clear block m-b-none">这是一条默认的说说，如果你看到这条动态，请去后台新建独立页面，地址填写cross,自定义模板选择时光机。具体说明请参见主题的使用攻略。<br><small class="text-muted">September 21st, 2021 a	 10:09 am</small></span></a>                </div>
+              </div>
+            </div>
+          </li>
+          <!--/闲言碎语-->
+                                </ul>
+      </div>
+      <!-- / navbar collapse -->
+  </header>
+  <!-- / headnav -->
+
+  <!--选择侧边栏的颜色-->
+  <aside id="aside" class="app-aside hidden-xs bg-white">  <!--<aside>-->
+        <div class="aside-wrap" layout="column">
+        <div class="navi-wrap scroll-y scroll-hide" flex>
+          <!-- user -->
+          <div class="clearfix hidden-xs text-center hide  show" id="aside-user">
+            <div class="dropdown wrapper vertical-wrapper">
+                <div ui-nav>
+                          <a href="../../../index.html">
+                            <span class="thumb-lg w-auto-folded avatar m-t-sm  vertical-avatar">
+                  <img src="https://gitee.com/jrcloud/cdn/raw/master/d.jpg" class="img-full img-circle normal-shadow">
+                </span>
+              </a>
+                </div>
+              <a href="index.html?replyTo=63#" data-toggle="dropdown" class="dropdown-toggle hidden-folded  vertical-flex">
+                <span class="clear">
+                  <span class="block m-t-sm">
+                    <strong class="font-bold text-lt">JR</strong>
+                    <b class="caret"></b>
+                  </span>
+                  <span class="text-muted text-xs block">博主QQ:676784163</span>
+                </span>
+              </a>
+              <!-- dropdown -->
+              <ul class="dropdown-menu animated fadeInRight w hidden-folded no-padder">
+                <li class="wrapper b-b m-b-sm bg-info m-n">
+                  <span class="arrow top hidden-folded arrow-info"></span>
+                  <div>
+                                                  <p>早上好，永远年轻，永远热泪盈眶</p>
+                                  </div>
+                  <div class="progress progress-xs m-b-none dker">
+                    <div class="progress-bar bg-white" data-toggle="tooltip" data-original-title="时间已经度过41.67%" style="width: 41.67%"></div>
+                  </div>
+                </li>
+              </ul>
+              <!-- / dropdown -->
+            </div>
+          </div>
+          <!-- / user -->
+
+          <!-- nav -->
+          <nav ui-nav class="navi clearfix">
+            <ul class="nav">
+             <!--index-->
+                <div class="line dk hidden-folded"></div>
+                <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                <span>导航</span>
+              </li>
+                                          <!--主页-->
+              <li>
+                <a href="../../../index.html" class="auto">
+                    <span class="nav-icon"><i data-feather="home"></i></span>
+                    <span>首页</span>
+                </a>
+              </li>
+              <!-- /主页 -->
+                                                        </ul>
+          </nav>
+          <!-- nav -->
+        </div>
+          <!--end of .navi-wrap-->
+          <!--left_footer-->
+          
+      </div><!--.aside-wrap-->
+  </aside>
+<!-- content -->
+<div id="content" class="app-content">
+    <!--loading animate-->
+    <div id="loading" class="butterbar active hide">
+            <span class="bar"></span>
+        </div>	<!-- / aside -->
+<style>
+    #post-content{
+        font-size: 14px;
+    }
+</style>
+<!-- <div id="content" class="app-content"> -->
+   <a class="off-screen-toggle hide"></a>
+   <main class="app-content-body animated fadeIn">
+    <div class="hbox hbox-auto-xs hbox-auto-sm">
+    <!--文章-->
+     <div class="col center-part">
+         <!--生成分享图片必须的HTML结构-->
+             <!--标题下的一排功能信息图标：作者/时间/浏览次数/评论数/分类-->
+      
+        <header id="small_widgets" class="bg-light lter wrapper-md">
+             <h1 class="entry-title m-n font-thin text-black l-h">[首发]小米小爱老师使用ankidroid播放视频(无需电脑)<a class="plus-font-size" data-toggle="tooltip" data-original-title="点击改变文章字体大小"><i data-feather="type"></i></a><a data-morphing="" id="morphing" data-src="#morphing-content" href="javascript:;" class="read_mode superscript m-l-sm" 
+data-toggle="tooltip" data-placement="right" data-original-title="阅读模式"><i data-feather="book-open"></i></a></h1>       <!--文章标题下面的小部件-->
+                  <ul  class="entry-meta text-muted list-inline m-b-none small
+             post-head-icon">
+             <!--作者-->
+             <li class="meta-author"><span class="post-icons"><i data-feather="user"></i></span><span
+                         class="sr-only">博主：</span> <a class="meta-value" href="../../author/1/index.html" rel="author"> jrcloud</a></li>
+             <!--发布时间-->
+             <li class="meta-date"><span class="post-icons"><i data-feather="clock"></i></span><span class="sr-only">发布时间：</span><time class="meta-value">2021 年 05 月 02 日</time></li>
+             <!--浏览数-->
+             <li class="meta-views"><span class="post-icons"><i data-feather="eye"></i></span><span class="meta-value">1707次浏览</span></li>
+                              <!--评论数-->
+                 <li class="meta-comments"><span class="post-icons"><i data-feather="message-circle"></i></span><a
+                             class="meta-value" href="index.html?replyTo=63#comments">15 条评论</a></li>
+             
+             <!--文字数目-->
+             <li class="meta-word"><span class="post-icons"><i data-feather="pen-tool"></i></span><span class="meta-value">572字数</span></li>
+             <!--分类-->
+             <li class="meta-categories"><span class="post-icons"><i data-feather="hash"></i></span><span class="sr-only">分类：</span> <span class="meta-value"><a href="../../category/网络小技巧/index.html">网络小技巧</a></span></li>
+         </ul>
+      </header>
+      <div class="wrapper-md" id="post-panel">
+	   <ol class="breadcrumb bg-white-pure" itemscope=""><li>
+                 <a href="../../../index.html" itemprop="breadcrumb" title="返回首页" data-toggle="tooltip"><span class="home-icons"><i data-feather="home"></i></span>首页</a>
+             </li><li class="active">正文&nbsp;&nbsp;</li></ol>       <!--博客文章样式 begin with .blog-post-->
+       <div id="postpage" class="blog-post">
+        <article class="single-post panel">
+        <!--文章页面的头图-->
+                 <!--文章内容-->
+         <div id="post-content" class="wrapper-lg">
+          <div class="entry-content l-h-2x">
+          <p>无需电脑的ankidroid播放视频方法~新鲜出炉 最新内测仍可用[截止2021.5.3]<br>教程如下:<br><strong>第一步</strong><br>先在手机上下载好视频(<code>1GB以内</code>)<br>然后将扩展名改成<code>mp3</code><br>然后用自带的文件传输导入</p><p><strong>第二步</strong><br>打开ankidroid 添加闪卡 选择音频文件<br>这时候会出现文件管理器 然后文件管理器搜索mp3 找到你刚刚导入的视频<br>然后点击 这时候anki会复制一份到他的文件夹<br>在电台里删除原文件确保空间足够<br>然后回到ankidroid 点击确认<br>会显示<code>[sound:文件名称.mp3]</code><br>然后把<code>文件名称.mp3</code> 剪切 其他删除</p><p><strong>第三步</strong><br>输入</p><pre><code>&lt;video width=&quot;320&quot; height=&quot;240&quot; controls&gt;
+&lt;source src=&quot;你刚刚剪切的文字&quot; type=&quot;video/mp4&quot;&gt;
+&lt;/video&gt;</code></pre><p>然后保存闪卡 然后点击<br>这时候就能播放视频了<br><code>320</code>和<code>240</code>为播放器大小 可以随意修改<br><code>video/mp4</code>为视频格式 可以按照视频原本格式修改</p><p>尊重原创 转载请注明原作者<code>JR[QQ:676784163]</code> 感谢</p><p>如果成功了 不妨点击下面赞赏按钮 给作者一点点支持吧[手动doge]</p>          </div>
+                          <!--文章的页脚部件：打赏和其他信息的输出-->
+             
+             <div class="show-foot">
+                 <div class="notebook">
+                     <i class="fontello fontello-clock-o"></i>
+                     <span>最后修改：2021 年 07 月 23 日 01 : 36  PM</span>
+                 </div>
+                 <div class="copyright" data-toggle="tooltip" data-html="true" data-original-title="转载请保留本文转载地址，著作权归作者所有"><span>© 允许规范转载</span>
+                 </div>
+             </div>
+                                      <!--打赏模块-->
+                 
+             <div class="support-author">
+                 <button data-toggle="modal" data-target="#myModal" class="btn btn-pay btn-danger btn-rounded"><i class="fontello fontello-wallet" aria-hidden="true"></i>&nbsp;赞赏</button>
+                 <div class="mt20 text-center article__reward-info">
+                     <span class="mr10">如果觉得我的文章对你有用，请随意赞赏</span>
+                 </div>
+             </div>
+             <div id="myModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                 <div class="modal-dialog modal-sm" role="document">
+                     <div class="modal-content">
+                         <div class="modal-header">
+                             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                             <h4 class="modal-title">赞赏作者</h4>
+                         </div>
+                         <div class="modal-body">
+                             <p class="text-center article__reward"> <strong class="article__reward-text">扫一扫支付</strong> </p>
+                             <div class="tab-content"><img noGallery aria-labelledby="alipay-tab" class="pay-img tab-pane fade in active" id="alipay_author" role="tabpanel" src="https://gitee.com/jrcloud/cdn/raw/master/pay.jpg" /><img noGallery aria-labelledby="wechatpay-tab" class="pay-img tab-pane fade" id="wechatpay_author" role="tabpanel" src="https://gitee.com/jrcloud/cdn/raw/master/pay.png" /></div>
+                             <div class="article__reward-border mb20 mt10"></div>
+
+                             <div class="text-center" role="tablist"><div class="pay-button" role="presentation" class="active"><button  href="#alipay_author" id="alipay-tab" aria-controls="alipay_author" role="tab" data-toggle="tab" class="btn m-b-xs m-r-xs btn-info"><i class="iconfont icon-alipay" aria-hidden="true"></i><span>&nbsp;支付宝支付</span></button>
+                                 </div><div class="pay-button" role="presentation"><button href="#wechatpay_author" id="wechatpay-tab" aria-controls="wechatpay_author" role="tab" data-toggle="tab" class="btn m-b-xs btn-success"><i class="iconfont icon-wechatpay" aria-hidden="true"></i><span>&nbsp;微信支付</span></button>
+                                 </div></div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+                                  <!--/文章的页脚部件：打赏和其他信息的输出-->
+         </div>
+        </article>
+       </div>
+       <!--上一篇&下一篇-->
+       <nav class="m-t-lg m-b-lg">
+        <ul class="pager">
+        <li class="next"> <a class="box-shadow-wrap-normal" href="../95/index.html" title="在越狱后的iOS上运行QEMU虚拟机~" data-toggle="tooltip"> 
+下一篇 </a></li>   <li class="previous"> <a class="box-shadow-wrap-normal" href="../99/index.html" title="搭建私人DNS教程~" data-toggle="tooltip"> 上一篇 </a></li>
+        </ul>
+       </nav>
+       <!--评论-->
+        
+            <style>
+            textarea#comment{
+                background-image: url('https://gitee.com/jrcloud/cdn/raw/master/d.jpg');
+                background-color: #ffffff;
+                transition: all 0.25s ease-in-out 0s;
+            }
+            textarea#comment:focus {
+                background-position-y: 105px;
+                transition: all 0.25s ease-in-out 0s;
+            }
+        </style>
+    
+    
+    <div id="comments">
+        
+                    <!--评论列表-->
+            <h4 class="comments-title m-t-lg m-b">15 条评论</h4><ol class="comment-list">
+        <!--自定义评论代码结构-->
+
+        <li id="comment-63" class="comment-body comment-parent comment-odd">
+            <div id="div-comment-63" class="comment-body">
+
+                <a class="pull-left thumb-sm" rel="nofollow">
+                    <img nogallery src="https://q.qlogo.cn/g?b=qq&nk=3623058050&s=100" class="img-40px photo img-square normal-shadow">                </a>
+                <div class="m-b m-l-xxl">
+                    <div class="comment-meta">
+            <span class="comment-author vcard">
+              <b class="fn">HMuSeaB</b>              </span>
+                        <div class="comment-metadata">
+                            <time class="format_time text-muted text-xs block m-t-xs" pubdate="pubdate" datetime="2021-07-25T20:49:41+08:00">July 25th, 2021 at 08:49 pm</time>
+                        </div>
+                    </div>
+                    <!--回复内容-->
+                    <div class="comment-content m-t-sm">
+                        <span class="comment-author-at"><b></b></span><span class="comment-content-true">
+                            <p>现在还能用吗，我怎么搞不了。。。<br>OωO</p>                        </span>
+                    </div>
+                    <!--回复按钮-->
+                    <div class="comment-reply m-t-sm">
+                        <a href="index.html?replyTo=63#respond-post-97" rel="nofollow" onclick="return TypechoComment.reply('comment-63', 63);">回复</a>                    </div>
+                </div>
+
+            </div>
+            <!-- 单条评论者信息及内容 -->
+             <!-- 是否嵌套评论判断结束 -->
+        </li><!--匹配`自定义评论的代码结构`下面的li标签-->
+    
+        <!--自定义评论代码结构-->
+
+        <li id="comment-62" class="comment-body comment-parent comment-even">
+            <div id="div-comment-62" class="comment-body">
+
+                <a class="pull-left thumb-sm" rel="nofollow">
+                    <img nogallery src="https://q.qlogo.cn/g?b=qq&nk=3359843990&s=100" class="img-40px photo img-square normal-shadow">                </a>
+                <div class="m-b m-l-xxl">
+                    <div class="comment-meta">
+            <span class="comment-author vcard">
+              <b class="fn">FRANCIS</b>              </span>
+                        <div class="comment-metadata">
+                            <time class="format_time text-muted text-xs block m-t-xs" pubdate="pubdate" datetime="2021-07-13T13:01:35+08:00">July 13th, 2021 at 01:01 pm</time>
+                        </div>
+                    </div>
+                    <!--回复内容-->
+                    <div class="comment-content m-t-sm">
+                        <span class="comment-author-at"><b></b></span><span class="comment-content-true">
+                            <p>谢谢大佬！！！</p>                        </span>
+                    </div>
+                    <!--回复按钮-->
+                    <div class="comment-reply m-t-sm">
+                        <a href="index.html?replyTo=62#respond-post-97" rel="nofollow" onclick="return TypechoComment.reply('comment-62', 62);">回复</a>                    </div>
+                </div>
+
+            </div>
+            <!-- 单条评论者信息及内容 -->
+             <!-- 是否嵌套评论判断结束 -->
+        </li><!--匹配`自定义评论的代码结构`下面的li标签-->
+    
+        <!--自定义评论代码结构-->
+
+        <li id="comment-61" class="comment-body comment-parent comment-odd">
+            <div id="div-comment-61" class="comment-body">
+
+                <a class="pull-left thumb-sm" rel="nofollow">
+                    <img nogallery src="https://q.qlogo.cn/g?b=qq&nk=3117006354&s=100" class="img-40px photo img-square normal-shadow">                </a>
+                <div class="m-b m-l-xxl">
+                    <div class="comment-meta">
+            <span class="comment-author vcard">
+              <b class="fn">路由器</b>              </span>
+                        <div class="comment-metadata">
+                            <time class="format_time text-muted text-xs block m-t-xs" pubdate="pubdate" datetime="2021-07-12T22:30:49+08:00">July 12th, 2021 at 10:30 pm</time>
+                        </div>
+                    </div>
+                    <!--回复内容-->
+                    <div class="comment-content m-t-sm">
+                        <span class="comment-author-at"><b></b></span><span class="comment-content-true">
+                            <p>怎么去后台建立新页面</p>                        </span>
+                    </div>
+                    <!--回复按钮-->
+                    <div class="comment-reply m-t-sm">
+                        <a href="index.html?replyTo=61#respond-post-97" rel="nofollow" onclick="return TypechoComment.reply('comment-61', 61);">回复</a>                    </div>
+                </div>
+
+            </div>
+            <!-- 单条评论者信息及内容 -->
+             <!-- 是否嵌套评论判断结束 -->
+        </li><!--匹配`自定义评论的代码结构`下面的li标签-->
+    
+        <!--自定义评论代码结构-->
+
+        <li id="comment-50" class="comment-body comment-parent comment-even">
+            <div id="div-comment-50" class="comment-body">
+
+                <a class="pull-left thumb-sm" rel="nofollow">
+                    <img nogallery src="https://q.qlogo.cn/g?b=qq&nk=3134926965&s=100" class="img-40px photo img-square normal-shadow">                </a>
+                <div class="m-b m-l-xxl">
+                    <div class="comment-meta">
+            <span class="comment-author vcard">
+              <b class="fn">铁柱</b>              </span>
+                        <div class="comment-metadata">
+                            <time class="format_time text-muted text-xs block m-t-xs" pubdate="pubdate" datetime="2021-06-04T23:26:12+08:00">June 4th, 2021 at 11:26 pm</time>
+                        </div>
+                    </div>
+                    <!--回复内容-->
+                    <div class="comment-content m-t-sm">
+                        <span class="comment-author-at"><b></b></span><span class="comment-content-true">
+                            <p>现在小米应用商店里没有anki了怎么办啊？</p>                        </span>
+                    </div>
+                    <!--回复按钮-->
+                    <div class="comment-reply m-t-sm">
+                        <a href="index.html?replyTo=50#respond-post-97" rel="nofollow" onclick="return TypechoComment.reply('comment-50', 50);">回复</a>                    </div>
+                </div>
+
+            </div>
+            <!-- 单条评论者信息及内容 -->
+             <!-- 是否嵌套评论判断开始 -->
+                <div class="comment-children list-unstyled m-l-xxl">
+                    <ol class="comment-list">
+        <!--自定义评论代码结构-->
+
+        <li id="comment-53" class="comment-body comment-child comment-level-odd comment-odd comment-by-author">
+            <div id="div-comment-53" class="comment-body">
+
+                <a class="pull-left thumb-sm" rel="nofollow">
+                    <img nogallery src="https://gravatar.zeruns.tech/avatar//6228169984383737899647caed2a2b32?s=65&r=G&d=" class="img-40px photo img-square normal-shadow">                </a>
+                <div class="m-b m-l-xxl">
+                    <div class="comment-meta">
+            <span class="comment-author vcard">
+              <b class="fn"><a href="../../../index.html"target="_blank" rel="external nofollow">jrcloud</a></b><label class="label bg-dark m-l-xs">博主</label>              </span>
+                        <div class="comment-metadata">
+                            <time class="format_time text-muted text-xs block m-t-xs" pubdate="pubdate" datetime="2021-06-11T00:15:32+08:00">June 11th, 2021 at 12:15 am</time>
+                        </div>
+                    </div>
+                    <!--回复内容-->
+                    <div class="comment-content m-t-sm">
+                        <span class="comment-author-at"><b><a href="index.html?replyTo=63#comment-50">@铁柱</a></b></span><span class="comment-content-true">
+                            <p>没办法 官方下架了</p>                        </span>
+                    </div>
+                    <!--回复按钮-->
+                    <div class="comment-reply m-t-sm">
+                        <a href="index.html?replyTo=53#respond-post-97" rel="nofollow" onclick="return TypechoComment.reply('comment-53', 53);">回复</a>                    </div>
+                </div>
+
+            </div>
+            <!-- 单条评论者信息及内容 -->
+             <!-- 是否嵌套评论判断开始 -->
+                <div class="comment-children list-unstyled m-l-xxl">
+                    <ol class="comment-list">
+        <!--自定义评论代码结构-->
+
+        <li id="comment-60" class="comment-body comment-child2 comment-level-even comment-odd comment-by-author">
+            <div id="div-comment-60" class="comment-body">
+
+                <a class="pull-left thumb-sm" rel="nofollow">
+                    <img nogallery src="https://gravatar.zeruns.tech/avatar//6228169984383737899647caed2a2b32?s=65&r=G&d=" class="img-40px photo img-square normal-shadow">                </a>
+                <div class="m-b m-l-xxl">
+                    <div class="comment-meta">
+            <span class="comment-author vcard">
+              <b class="fn"><a href="../../../index.html"target="_blank" rel="external nofollow">jrcloud</a></b><label class="label bg-dark m-l-xs">博主</label>              </span>
+                        <div class="comment-metadata">
+                            <time class="format_time text-muted text-xs block m-t-xs" pubdate="pubdate" datetime="2021-07-07T23:23:44+08:00">July 7th, 2021 at 11:23 pm</time>
+                        </div>
+                    </div>
+                    <!--回复内容-->
+                    <div class="comment-content m-t-sm">
+                        <span class="comment-author-at"><b><a href="index.html?replyTo=63#comment-53">@jrcloud</a></b></span><span class="comment-content-true">
+                            <p>内测有了 加内测</p>                        </span>
+                    </div>
+                    <!--回复按钮-->
+                    <div class="comment-reply m-t-sm">
+                        <a href="index.html?replyTo=60#respond-post-97" rel="nofollow" onclick="return TypechoComment.reply('comment-60', 60);">回复</a>                    </div>
+                </div>
+
+            </div>
+            <!-- 单条评论者信息及内容 -->
+             <!-- 是否嵌套评论判断结束 -->
+        </li><!--匹配`自定义评论的代码结构`下面的li标签-->
+    </ol> <!-- 嵌套评论所有内容-->
+                </div>
+             <!-- 是否嵌套评论判断结束 -->
+        </li><!--匹配`自定义评论的代码结构`下面的li标签-->
+    </ol> <!-- 嵌套评论所有内容-->
+                </div>
+             <!-- 是否嵌套评论判断结束 -->
+        </li><!--匹配`自定义评论的代码结构`下面的li标签-->
+    
+        <!--自定义评论代码结构-->
+
+        <li id="comment-49" class="comment-body comment-parent comment-odd">
+            <div id="div-comment-49" class="comment-body">
+
+                <a class="pull-left thumb-sm" rel="nofollow">
+                    <img nogallery src="https://q.qlogo.cn/g?b=qq&nk=1737857936&s=100" class="img-40px photo img-square normal-shadow">                </a>
+                <div class="m-b m-l-xxl">
+                    <div class="comment-meta">
+            <span class="comment-author vcard">
+              <b class="fn">二江</b>              </span>
+                        <div class="comment-metadata">
+                            <time class="format_time text-muted text-xs block m-t-xs" pubdate="pubdate" datetime="2021-06-03T23:17:42+08:00">June 3rd, 2021 at 11:17 pm</time>
+                        </div>
+                    </div>
+                    <!--回复内容-->
+                    <div class="comment-content m-t-sm">
+                        <span class="comment-author-at"><b></b></span><span class="comment-content-true">
+                            <p>国内对104.155.220.58这个ip屏蔽了，只有个别WiFi打得开，所以有没有别的IP可以继续用呢？谢谢大佬！</p>                        </span>
+                    </div>
+                    <!--回复按钮-->
+                    <div class="comment-reply m-t-sm">
+                        <a href="index.html?replyTo=49#respond-post-97" rel="nofollow" onclick="return TypechoComment.reply('comment-49', 49);">回复</a>                    </div>
+                </div>
+
+            </div>
+            <!-- 单条评论者信息及内容 -->
+             <!-- 是否嵌套评论判断开始 -->
+                <div class="comment-children list-unstyled m-l-xxl">
+                    <ol class="comment-list">
+        <!--自定义评论代码结构-->
+
+        <li id="comment-52" class="comment-body comment-child comment-level-odd comment-odd comment-by-author">
+            <div id="div-comment-52" class="comment-body">
+
+                <a class="pull-left thumb-sm" rel="nofollow">
+                    <img nogallery src="https://gravatar.zeruns.tech/avatar//6228169984383737899647caed2a2b32?s=65&r=G&d=" class="img-40px photo img-square normal-shadow">                </a>
+                <div class="m-b m-l-xxl">
+                    <div class="comment-meta">
+            <span class="comment-author vcard">
+              <b class="fn"><a href="../../../index.html"target="_blank" rel="external nofollow">jrcloud</a></b><label class="label bg-dark m-l-xs">博主</label>              </span>
+                        <div class="comment-metadata">
+                            <time class="format_time text-muted text-xs block m-t-xs" pubdate="pubdate" datetime="2021-06-11T00:15:00+08:00">June 11th, 2021 at 12:15 am</time>
+                        </div>
+                    </div>
+                    <!--回复内容-->
+                    <div class="comment-content m-t-sm">
+                        <span class="comment-author-at"><b><a href="index.html?replyTo=63#comment-49">@二江</a></b></span><span class="comment-content-true">
+                            <p>不是 是ipv6的关系</p>                        </span>
+                    </div>
+                    <!--回复按钮-->
+                    <div class="comment-reply m-t-sm">
+                        <a href="index.html?replyTo=52#respond-post-97" rel="nofollow" onclick="return TypechoComment.reply('comment-52', 52);">回复</a>                    </div>
+                </div>
+
+            </div>
+            <!-- 单条评论者信息及内容 -->
+             <!-- 是否嵌套评论判断开始 -->
+                <div class="comment-children list-unstyled m-l-xxl">
+                    <ol class="comment-list">
+        <!--自定义评论代码结构-->
+
+        <li id="comment-55" class="comment-body comment-child2 comment-level-even comment-odd">
+            <div id="div-comment-55" class="comment-body">
+
+                <a class="pull-left thumb-sm" rel="nofollow">
+                    <img nogallery src="https://gravatar.zeruns.tech/avatar//7171d9263211ee2d2bd247c492914d27?s=65&r=G&d=" class="img-40px photo img-square normal-shadow">                </a>
+                <div class="m-b m-l-xxl">
+                    <div class="comment-meta">
+            <span class="comment-author vcard">
+              <b class="fn">edremy</b>              </span>
+                        <div class="comment-metadata">
+                            <time class="format_time text-muted text-xs block m-t-xs" pubdate="pubdate" datetime="2021-06-17T20:24:27+08:00">June 17th, 2021 at 08:24 pm</time>
+                        </div>
+                    </div>
+                    <!--回复内容-->
+                    <div class="comment-content m-t-sm">
+                        <span class="comment-author-at"><b><a href="index.html?replyTo=63#comment-52">@jrcloud</a></b></span><span class="comment-content-true">
+                            <p>意思是大部分情况下这个ip都不能用了，那么有没有能用的呢</p>                        </span>
+                    </div>
+                    <!--回复按钮-->
+                    <div class="comment-reply m-t-sm">
+                        <a href="index.html?replyTo=55#respond-post-97" rel="nofollow" onclick="return TypechoComment.reply('comment-55', 55);">回复</a>                    </div>
+                </div>
+
+            </div>
+            <!-- 单条评论者信息及内容 -->
+             <!-- 是否嵌套评论判断结束 -->
+        </li><!--匹配`自定义评论的代码结构`下面的li标签-->
+    </ol> <!-- 嵌套评论所有内容-->
+                </div>
+             <!-- 是否嵌套评论判断结束 -->
+        </li><!--匹配`自定义评论的代码结构`下面的li标签-->
+    </ol> <!-- 嵌套评论所有内容-->
+                </div>
+             <!-- 是否嵌套评论判断结束 -->
+        </li><!--匹配`自定义评论的代码结构`下面的li标签-->
+    
+        <!--自定义评论代码结构-->
+
+        <li id="comment-48" class="comment-body comment-parent comment-even">
+            <div id="div-comment-48" class="comment-body">
+
+                <a class="pull-left thumb-sm" rel="nofollow">
+                    <img nogallery src="https://q.qlogo.cn/g?b=qq&nk=3309663779&s=100" class="img-40px photo img-square normal-shadow">                </a>
+                <div class="m-b m-l-xxl">
+                    <div class="comment-meta">
+            <span class="comment-author vcard">
+              <b class="fn">墨乾翊</b>              </span>
+                        <div class="comment-metadata">
+                            <time class="format_time text-muted text-xs block m-t-xs" pubdate="pubdate" datetime="2021-06-03T22:50:59+08:00">June 3rd, 2021 at 10:50 pm</time>
+                        </div>
+                    </div>
+                    <!--回复内容-->
+                    <div class="comment-content m-t-sm">
+                        <span class="comment-author-at"><b></b></span><span class="comment-content-true">
+                            <p>竖屏就先转换视频向右旋转再传输就行，只是有一点点麻烦</p>                        </span>
+                    </div>
+                    <!--回复按钮-->
+                    <div class="comment-reply m-t-sm">
+                        <a href="index.html?replyTo=48#respond-post-97" rel="nofollow" onclick="return TypechoComment.reply('comment-48', 48);">回复</a>                    </div>
+                </div>
+
+            </div>
+            <!-- 单条评论者信息及内容 -->
+             <!-- 是否嵌套评论判断结束 -->
+        </li><!--匹配`自定义评论的代码结构`下面的li标签-->
+    
+        <!--自定义评论代码结构-->
+
+        <li id="comment-47" class="comment-body comment-parent comment-odd">
+            <div id="div-comment-47" class="comment-body">
+
+                <a class="pull-left thumb-sm" rel="nofollow">
+                    <img nogallery src="https://gravatar.zeruns.tech/avatar//ed202296ad18feb3254f4298abf4c2c4?s=65&r=G&d=" class="img-40px photo img-square normal-shadow">                </a>
+                <div class="m-b m-l-xxl">
+                    <div class="comment-meta">
+            <span class="comment-author vcard">
+              <b class="fn">平凡的初中生</b>              </span>
+                        <div class="comment-metadata">
+                            <time class="format_time text-muted text-xs block m-t-xs" pubdate="pubdate" datetime="2021-05-22T09:57:18+08:00">May 22nd, 2021 at 09:57 am</time>
+                        </div>
+                    </div>
+                    <!--回复内容-->
+                    <div class="comment-content m-t-sm">
+                        <span class="comment-author-at"><b></b></span><span class="comment-content-true">
+                            <p>有没有什么方法可以横屏观看？</p>                        </span>
+                    </div>
+                    <!--回复按钮-->
+                    <div class="comment-reply m-t-sm">
+                        <a href="index.html?replyTo=47#respond-post-97" rel="nofollow" onclick="return TypechoComment.reply('comment-47', 47);">回复</a>                    </div>
+                </div>
+
+            </div>
+            <!-- 单条评论者信息及内容 -->
+             <!-- 是否嵌套评论判断结束 -->
+        </li><!--匹配`自定义评论的代码结构`下面的li标签-->
+    
+        <!--自定义评论代码结构-->
+
+        <li id="comment-46" class="comment-body comment-parent comment-even">
+            <div id="div-comment-46" class="comment-body">
+
+                <a class="pull-left thumb-sm" rel="nofollow">
+                    <img nogallery src="https://gravatar.zeruns.tech/avatar//c6a97597ece98998c90e08d5822ddb46?s=65&r=G&d=" class="img-40px photo img-square normal-shadow">                </a>
+                <div class="m-b m-l-xxl">
+                    <div class="comment-meta">
+            <span class="comment-author vcard">
+              <b class="fn">123</b>              </span>
+                        <div class="comment-metadata">
+                            <time class="format_time text-muted text-xs block m-t-xs" pubdate="pubdate" datetime="2021-05-16T23:14:19+08:00">May 16th, 2021 at 11:14 pm</time>
+                        </div>
+                    </div>
+                    <!--回复内容-->
+                    <div class="comment-content m-t-sm">
+                        <span class="comment-author-at"><b></b></span><span class="comment-content-true">
+                            <p>唔，成功是成功了，但是有没有办法横屏啊，竖屏看着好难受。感谢分享！ <img src="../../../usr/themes/handsome/usr/img/emotion/twemoji/tiaomei.png" class="emotion-twemoji"></p>                        </span>
+                    </div>
+                    <!--回复按钮-->
+                    <div class="comment-reply m-t-sm">
+                        <a href="index.html?replyTo=46#respond-post-97" rel="nofollow" onclick="return TypechoComment.reply('comment-46', 46);">回复</a>                    </div>
+                </div>
+
+            </div>
+            <!-- 单条评论者信息及内容 -->
+             <!-- 是否嵌套评论判断开始 -->
+                <div class="comment-children list-unstyled m-l-xxl">
+                    <ol class="comment-list">
+        <!--自定义评论代码结构-->
+
+        <li id="comment-58" class="comment-body comment-child comment-level-odd comment-odd">
+            <div id="div-comment-58" class="comment-body">
+
+                <a class="pull-left thumb-sm" rel="nofollow">
+                    <img nogallery src="https://gravatar.zeruns.tech/avatar//4848a547530dc1c7a15da54a72b94c5a?s=65&r=G&d=" class="img-40px photo img-square normal-shadow">                </a>
+                <div class="m-b m-l-xxl">
+                    <div class="comment-meta">
+            <span class="comment-author vcard">
+              <b class="fn">普朗克</b>              </span>
+                        <div class="comment-metadata">
+                            <time class="format_time text-muted text-xs block m-t-xs" pubdate="pubdate" datetime="2021-06-30T09:29:58+08:00">June 30th, 2021 at 09:29 am</time>
+                        </div>
+                    </div>
+                    <!--回复内容-->
+                    <div class="comment-content m-t-sm">
+                        <span class="comment-author-at"><b><a href="index.html?replyTo=63#comment-46">@123</a></b></span><span class="comment-content-true">
+                            <p>结合HTML可以旋转视频，暂停，快进快退</p>                        </span>
+                    </div>
+                    <!--回复按钮-->
+                    <div class="comment-reply m-t-sm">
+                        <a href="index.html?replyTo=58#respond-post-97" rel="nofollow" onclick="return TypechoComment.reply('comment-58', 58);">回复</a>                    </div>
+                </div>
+
+            </div>
+            <!-- 单条评论者信息及内容 -->
+             <!-- 是否嵌套评论判断结束 -->
+        </li><!--匹配`自定义评论的代码结构`下面的li标签-->
+    </ol> <!-- 嵌套评论所有内容-->
+                </div>
+             <!-- 是否嵌套评论判断结束 -->
+        </li><!--匹配`自定义评论的代码结构`下面的li标签-->
+    
+        <!--自定义评论代码结构-->
+
+        <li id="comment-39" class="comment-body comment-parent comment-odd">
+            <div id="div-comment-39" class="comment-body">
+
+                <a class="pull-left thumb-sm" rel="nofollow">
+                    <img nogallery src="https://gravatar.zeruns.tech/avatar//3bdc44aed66e9af7778f8cbd7b11d5e0?s=65&r=G&d=" class="img-40px photo img-square normal-shadow">                </a>
+                <div class="m-b m-l-xxl">
+                    <div class="comment-meta">
+            <span class="comment-author vcard">
+              <b class="fn"><a href="https://misaliu.top"target="_blank" rel="external nofollow">MisaLiu</a></b>              </span>
+                        <div class="comment-metadata">
+                            <time class="format_time text-muted text-xs block m-t-xs" pubdate="pubdate" datetime="2021-05-03T01:12:22+08:00">May 3rd, 2021 at 01:12 am</time>
+                        </div>
+                    </div>
+                    <!--回复内容-->
+                    <div class="comment-content m-t-sm">
+                        <span class="comment-author-at"><b></b></span><span class="comment-content-true">
+                            <p>火钳刘明</p>                        </span>
+                    </div>
+                    <!--回复按钮-->
+                    <div class="comment-reply m-t-sm">
+                        <a href="index.html?replyTo=39#respond-post-97" rel="nofollow" onclick="return TypechoComment.reply('comment-39', 39);">回复</a>                    </div>
+                </div>
+
+            </div>
+            <!-- 单条评论者信息及内容 -->
+             <!-- 是否嵌套评论判断开始 -->
+                <div class="comment-children list-unstyled m-l-xxl">
+                    <ol class="comment-list">
+        <!--自定义评论代码结构-->
+
+        <li id="comment-41" class="comment-body comment-child comment-level-odd comment-odd">
+            <div id="div-comment-41" class="comment-body">
+
+                <a class="pull-left thumb-sm" rel="nofollow">
+                    <img nogallery src="https://gravatar.zeruns.tech/avatar//cffe40719411e34ca3e0c4a8d86360d8?s=65&r=G&d=" class="img-40px photo img-square normal-shadow">                </a>
+                <div class="m-b m-l-xxl">
+                    <div class="comment-meta">
+            <span class="comment-author vcard">
+              <b class="fn">EternalViolet</b>              </span>
+                        <div class="comment-metadata">
+                            <time class="format_time text-muted text-xs block m-t-xs" pubdate="pubdate" datetime="2021-05-04T21:14:23+08:00">May 4th, 2021 at 09:14 pm</time>
+                        </div>
+                    </div>
+                    <!--回复内容-->
+                    <div class="comment-content m-t-sm">
+                        <span class="comment-author-at"><b><a href="index.html?replyTo=63#comment-39">@MisaLiu</a></b></span><span class="comment-content-true">
+                            <p>嘶，能举个例子么，我这个按照您说的如果不保留［sound:ankidroid_audioclip_文件名.mp3]这部分视频无法播放<br>如果全部保留，播放的只有音频<br>我以我怀疑是我理解错了</p>                        </span>
+                    </div>
+                    <!--回复按钮-->
+                    <div class="comment-reply m-t-sm">
+                        <a href="index.html?replyTo=41#respond-post-97" rel="nofollow" onclick="return TypechoComment.reply('comment-41', 41);">回复</a>                    </div>
+                </div>
+
+            </div>
+            <!-- 单条评论者信息及内容 -->
+             <!-- 是否嵌套评论判断结束 -->
+        </li><!--匹配`自定义评论的代码结构`下面的li标签-->
+    </ol> <!-- 嵌套评论所有内容-->
+                </div>
+             <!-- 是否嵌套评论判断结束 -->
+        </li><!--匹配`自定义评论的代码结构`下面的li标签-->
+    </ol><nav class="text-center m-t-lg m-b-lg" role="navigation"></nav>        
+        <!--如果允许评论，会出现评论框和个人信息的填写-->
+                    <div id="respond-post-97" class="respond comment-respond no-borders">
+
+                <h4 id="reply-title" class="comment-reply-title m-t-lg m-b">发表评论                    <small><i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" title="请文明发言"></i>
+                    </small>
+                    <small class="cancel-comment-reply">
+                        <a id="cancel-comment-reply-link" href="index.html#respond-post-97" rel="nofollow" onclick="return TypechoComment.cancelReply();">取消回复</a>                    </small>
+                </h4>
+                <form id="comment_form" method="post" action="https://blog.jrcloud.vip/index.php/archives/97/comment?parent=63"  class="comment-form" role="form">
+                    <div class="comment-form-comment form-group">
+                        <label class="padder-v-sm" for="comment">评论                            <span class="required text-danger">*</span></label>
+                        <textarea id="comment" class="textarea form-control OwO-textarea" name="text" rows="5" placeholder="说点什么吧……" onkeydown="if(event.ctrlKey&&event.keyCode==13){document.getElementById('submit').click();return false};"></textarea>
+                        <div class="OwO padder-v-sm"></div>
+                        <div class="secret_comment" id="secret_comment" data-toggle="tooltip"
+                        data-original-title="开启该功能，您的评论仅作者和评论双方可见">
+                            <label class="secret_comment_label control-label">私密评论</label>
+                            <div class="secret_comment_check">
+                                <label class="i-switch i-switch-sm bg-dark m-b-ss m-r">
+                                    <input type="checkbox" id="secret_comment_checkbox">
+                                    <i></i>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--判断是否登录-->
+                                                                <div id="author_info" class="row row-sm">
+                                                        <div class="comment-form-author form-group col-sm-6 col-md-4">
+                                <label for="author">名称                                    <span class="required text-danger">*</span></label>
+                                <div>
+                                                                        <img class="author-avatar" src="https://gravatar.zeruns.tech/avatar//d41d8cd98f00b204e9800998ecf8427e?s=65&r=G&d=" nogallery/>
+                                <input id="author" class="form-control" name="author" type="text" value="" maxlength="245" placeholder="姓名或昵称">
+                                </div>
+                            </div>
+
+                            <div class="comment-form-email form-group col-sm-6 col-md-4">
+                                <label for="email">邮箱                                    <span class="required text-danger">*</span>
+                                </label>
+                                <input type="text" name="mail" id="mail" class="form-control" placeholder="邮箱 (必填,将保密)" value="" />
+                                <input type="hidden" name="receiveMail" id="receiveMail" value="yes" />
+                            </div>
+
+                            <div class="comment-form-url form-group col-sm-12 col-md-4">
+                                <label for="url">地址</label>
+                                <input id="url" class="form-control" name="url" type="url" value="" maxlength="200" placeholder="网站或博客"></div>
+                        </div>
+                        <html>
+<p>由于本站已备案 你所发送的评论将审核 是否同意(填"是"或"否")</p>
+<input type="text" name="fname" />
+<p></p>
+</html>
+                        <!--提交按钮-->
+                        <div class="form-group">
+                            <button type="submit" name="submit" id="submit" class="submit btn-rounded box-shadow-wrap-lg btn-gd-primary padder-lg">
+                                <span>发表评论</span>
+                                <span class="text-active">提交中...</span>
+                            </button>
+                            <i class="animate-spin fontello fontello-spinner hide" id="spin"></i>
+                            <input type="hidden" name="comment_post_ID" id="comment_post_ID">
+                            <input type="hidden" name="comment_parent" id="comment_parent">
+                        </div>
+                </form>
+            </div>
+        
+            </div>
+
+
+      </div>
+     </div>
+     <!--文章右侧边栏开始-->
+      
+       <!--文章右侧边栏结束-->
+    </div>
+   </main>
+
+
+    <div id="morphing-content" class="hidden read_mode_article">
+        <div class="page">
+            <h1 class="title">[首发]小米小爱老师使用ankidroid播放视频(无需电脑)</h1>
+            <div class="metadata singleline"><a href="index.html?replyTo=63#" rel="author" class="byline">jrcloud</a>&nbsp;•&nbsp;<span class="delimiter"></span><time class="date">2021 年 05 月 02 日</time></div>
+            <p>无需电脑的ankidroid播放视频方法~新鲜出炉 最新内测仍可用[截止2021.5.3]<br>教程如下:<br><strong>第一步</strong><br>先在手机上下载好视频(<code>1GB以内</code>)<br>然后将扩展名改成<code>mp3</code><br>然后用自带的文件传输导入</p><p><strong>第二步</strong><br>打开ankidroid 添加闪卡 选择音频文件<br>这时候会出现文件管理器 然后文件管理器搜索mp3 找到你刚刚导入的视频<br>然后点击 这时候anki会复制一份到他的文件夹<br>在电台里删除原文件确保空间足够<br>然后回到ankidroid 点击确认<br>会显示<code>[sound:文件名称.mp3]</code><br>然后把<code>文件名称.mp3</code> 剪切 其他删除</p><p><strong>第三步</strong><br>输入</p><pre><code>&lt;video width=&quot;320&quot; height=&quot;240&quot; controls&gt;
+&lt;source src=&quot;你刚刚剪切的文字&quot; type=&quot;video/mp4&quot;&gt;
+&lt;/video&gt;</code></pre><p>然后保存闪卡 然后点击<br>这时候就能播放视频了<br><code>320</code>和<code>240</code>为播放器大小 可以随意修改<br><code>video/mp4</code>为视频格式 可以按照视频原本格式修改</p><p>尊重原创 转载请注明原作者<code>JR[QQ:676784163]</code> 感谢</p><p>如果成功了 不妨点击下面赞赏按钮 给作者一点点支持吧[手动doge]</p>
+        </div>
+    </div>
+    <script>
+        try {
+            $("[data-morphing]").fancyMorph({
+                hash : 'morphing'
+            });
+        }catch (e){
+
+        }
+
+            </script>
+<!-- footer -->
+	<script type="text/javascript">
+(function () {
+    window.TypechoComment = {
+        dom : function (id) {
+            return document.getElementById(id);
+        },
+    
+        create : function (tag, attr) {
+            var el = document.createElement(tag);
+        
+            for (var key in attr) {
+                el.setAttribute(key, attr[key]);
+            }
+        
+            return el;
+        },
+
+        reply : function (cid, coid) {
+            var comment = this.dom(cid), parent = comment.parentNode,
+                response = this.dom('respond-post-97'), input = this.dom('comment-parent'),
+                form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
+                textarea = response.getElementsByTagName('textarea')[0];
+
+            if (null == input) {
+                input = this.create('input', {
+                    'type' : 'hidden',
+                    'name' : 'parent',
+                    'id'   : 'comment-parent'
+                });
+
+                form.appendChild(input);
+            }
+
+            input.setAttribute('value', coid);
+
+            if (null == this.dom('comment-form-place-holder')) {
+                var holder = this.create('div', {
+                    'id' : 'comment-form-place-holder'
+                });
+
+                response.parentNode.insertBefore(holder, response);
+            }
+
+            comment.appendChild(response);
+            this.dom('cancel-comment-reply-link').style.display = '';
+
+            if (null != textarea && 'text' == textarea.name) {
+                textarea.focus();
+            }
+
+            return false;
+        },
+
+        cancelReply : function () {
+            var response = this.dom('respond-post-97'),
+            holder = this.dom('comment-form-place-holder'), input = this.dom('comment-parent');
+
+            if (null != input) {
+                input.parentNode.removeChild(input);
+            }
+
+            if (null == holder) {
+                return true;
+            }
+
+            this.dom('cancel-comment-reply-link').style.display = 'none';
+            holder.parentNode.insertBefore(response, holder);
+            return false;
+        }
+    };
+})();
+</script>
+<script type="text/javascript">
+var registCommentEvent = function() {
+    var event = document.addEventListener ? {
+        add: 'addEventListener',
+        focus: 'focus',
+        load: 'DOMContentLoaded'
+    } : {
+        add: 'attachEvent',
+        focus: 'onfocus',
+        load: 'onload'
+    };
+    var r = document.getElementById('respond-post-97');
+        
+    if (null != r) {
+        var forms = r.getElementsByTagName('form');
+        if (forms.length > 0) {
+            var f = forms[0], textarea = f.getElementsByTagName('textarea')[0], added = false;
+
+            if (null != textarea && 'text' == textarea.name) {
+                textarea[event.add](event.focus, function () {
+                    if (!added) {
+                        var input = document.createElement('input');
+                        input.type = 'hidden';
+                        input.name = '_';
+                            input.value = (function () {
+    var _aczk9J = 'a82'//'dU'
++'a'//'a'
++/* '66'//'66' */''+'e'//'CV'
++'5'//'zO'
++'06'//'z'
++'227'//'5AQ'
++'bDC'//'bDC'
++'0'//'lBO'
++//'Q'
+'810'+''///*'naw'*/'naw'
++//'7Z'
+'2'+'87'//'Mt'
++'4'//'KMC'
++//'rQI'
+'a'+'359'//'JXG'
++'cc'//'x'
++//'5xt'
+'7'+//'nMY'
+'00'+'f5'//'f5'
++'e3'//'L'
++//'yUx'
+'8'+/* 'nBR'//'nBR' */''+//'tM'
+'6', _HgRD3 = [[11,14],[28,30]];
+    
+    for (var i = 0; i < _HgRD3.length; i ++) {
+        _aczk9J = _aczk9J.substring(0, _HgRD3[i][0]) + _aczk9J.substring(_HgRD3[i][1]);
+    }
+
+    return _aczk9J;
+})();
+                    
+                        f.appendChild(input);
+                        
+                        input = document.createElement('input');
+                        input.type = 'hidden';
+                        input.name = 'checkReferer';
+                        input.value = 'false';
+                        
+                        f.appendChild(input);
+                        
+
+                        added = true;
+                    }
+                });
+            }
+        }
+    }
+};
+</script></div><!-- /content -->
+  <footer id="footer" class="app-footer" role="footer">
+    <div class="wrapper bg-light">
+      <span class="pull-right hidden-xs text-ellipsis">
+            Powered by <a target="_blank" href="http://www.typecho.org">Typecho</a>&nbsp;|&nbsp;Theme by <a target="_blank"
+                                                                                                     href="https://www.yunziyuan.com.cn/archives/489/">handsome</a>
+      </span>
+        <span class="text-ellipsis">&copy;&nbsp;2021 Copyright&nbsp;<a href="../../../index.html">JRCloud </a>/
+<font>浙ICP备2020031873号 </font></span>
+    </div>
+      <!--可以去除主题版权信息，最好保留版权信息或者添加主题信息到友链，谢谢你的理解-->
+            <style>
+          .topButton>.btn{
+              top: 0;
+          }
+          </style>
+      
+      <div class="topButton panel panel-default">
+          <button id="goToTop" class="btn btn-default no-shadow pos-abt hide  border-radius-half-left"
+                  data-toggle="tooltip" data-placement="left" data-original-title="返回顶部">
+              <i class="fontello fontello-chevron-circle-up" aria-hidden="true"></i>
+          </button>
+      </div>
+  </footer>
+  </div><!--end of .app app-header-fixed-->
+
+<script type="text/javascript">
+	(function(){
+		var pres = document.querySelectorAll('pre');
+		var lineNumberClassName = 'line-numbers';
+		pres.forEach(function (item, index) {
+			item.className = item.className == '' ? lineNumberClassName : item.className + ' ' + lineNumberClassName;
+		});
+	})();
+</script>
+<script type="text/javascript" src="../../../usr/plugins/CodePrettify/static/clipboard.min.js"></script>
+<script type="text/javascript" src="../../../usr/plugins/CodePrettify/static/prism.js"></script>
+
+
+        <script type="text/javascript" src="https://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script><canvas id="fireworks" style="position:fixed;left:0;top:0;pointer-events:none;"></canvas><script type="text/javascript" src="https://cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script><script type='text/javascript' src='../../../usr/plugins/HoerMouse/static/js/fireworks.js'></script><script>console.log('%c 炫彩鼠标插件 https://gitee.com/HoeXhe/HoerMouse %c www.hoehub.com 😊 HoerMouse By Hoe ', 'font-family:\'Microsoft YaHei\',\'SF Pro Display\',Roboto,Noto,Arial,\'PingFang SC\',sans-serif;color:white;background:#ffa099;padding:5px 0;', 'font-family:\'Microsoft YaHei\',\'SF Pro Display\',Roboto,Noto,Arial,\'PingFang SC\',sans-serif;color:#ffa099;background:#404040;padding:5px 0;'); // 你能留下我的信息, 我会很高兴的 ^_^</script>
+    <!--定义全局变量-->
+    <script type="text/javascript">
+        window['LocalConst'] = {
+            COMMENT_NAME_INFO: '必须填写昵称或姓名',
+            COMMENT_EMAIL_INFO: '必须填写电子邮箱地址',
+            COMMENT_EMAIL_LEGAL_INFO: '邮箱地址不合法',
+            COMMENT_CONTENT_INFO: '必须填写评论内容',
+            COMMENT_SUBMIT_ERROR: '提交失败，请重试！',
+            COMMENT_CONTENT_LEGAL_INFO: '提交失败,评论被拦截，可能发言太快或内容不符合规则',
+
+            LOGIN_USERNAME_INFO: '必须填写用户名',
+            LOGIN_PASSWORD_INFO: '请填写密码',
+            LOGIN_SUBMIT_ERROR: '登录失败，请重新登录',
+            LOGIN_SUBMIT_INFO: '用户名或者密码错误，请重试',
+            LOGIN_SUBMIT_SUCCESS: '登录成功',
+            CLICK_TO_REFRESH: '点击以刷新页面',
+            LOGOUT_SUCCESS_REFRESH: '退出成功，正在刷新当前页面',
+
+            LOGOUT_ERROR: '退出失败，请重试',
+            LOGOUT_SUCCESS: '退出成功',
+
+            SUBMIT_PASSWORD_INFO: '密码错误，请重试',
+            COMMENT_TITLE: '评论通知',
+            LOGIN_TITLE: '登录通知',
+            ChANGYAN_APP_KEY: '',
+            CHANGYAN_CONF: '',
+
+            COMMENT_SYSTEM: '0',
+            COMMENT_SYSTEM_ROOT: '0',
+            COMMENT_SYSTEM_CHANGYAN: '1',
+            COMMENT_SYSTEM_OTHERS: '2',
+            EMOJI: '表情',
+            IS_PJAX: '1',
+            IS_PAJX_COMMENT: '1',
+            BASE_SCRIPT_URL: 'https://blog.jrcloud.vip/usr/themes/handsome/',
+            BLOG_URL: 'https://blog.jrcloud.vip/',
+            BLOG_URL_PHP: 'https://blog.jrcloud.vip/index.php/',
+            THEME_COLOR: '14',
+            THEME_COLOR_EDIT: 'white-white-white',
+            THEME_HEADER_FIX: '1',
+            THEME_ASIDE_FIX: '1',
+            THEME_ASIDE_FOLDED: '',
+            THEME_ASIDE_DOCK: '',
+            THEME_CONTAINER_BOX: '1',
+            THEME_HIGHLIGHT_CODE: '1',
+            THEME_TOC: '',
+            TOC_TITLE: '文章目录',
+            HEADER_FIX: '固定头部',
+            ASIDE_FIX: '固定导航',
+            ASIDE_FOLDED: '折叠导航',
+            ASIDE_DOCK: '置顶导航',
+            CONTAINER_BOX: '盒子模型',
+            OFF_SCROLL_HEIGHT: '50',
+            COMMENT_REJECT_PLACEHOLDER: '居然什么也不说，哼',
+            COMMENT_PLACEHOLDER: '说点什么吧……',
+            SHOW_SETTING_BUTTON: '',
+            THEME_VERSION: '6.0.020191205',
+
+            OPERATION_NOTICE: '操作通知',
+            SCREENSHOT_BEGIN: '正在生成当前页面截图……',
+            SCREENSHOT_NOTICE: '点击顶部下载按钮保存当前卡片',
+            SCREENSHORT_ERROR: '由于图片跨域原因导致截图失败',
+            SCREENSHORT_SUCCESS: '截图成功',
+            MUSIC_NOTICE: '播放通知',
+            MUSIC_FAILE: '当前音乐地址无效，自动为您播放下一首',
+            MUSIC_FAILE_END: '当前音乐地址无效',
+            MUSIC_LIST_SUCCESS: '歌单歌曲加载成功',
+            CDN_NAME: '',
+            LAZY_LOAD: ''
+        };
+
+    </script>
+
+
+
+<!--CDN加载-->
+<script src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+    <script src="../../../usr/themes/handsome/assets/js/features/jquery.pjax.min.js" type="text/javascript"></script>
+    <script>
+        $(document).pjax('a[href^="https://blog.jrcloud.vip/"]:not(a[target="_blank"], a[no-pjax])', {
+            container: '#content',
+            fragment: '#content',
+            timeout: 8000
+        }).on('pjax:send',function () {
+                        $('#loading').removeClass('hide');
+                    }).on('pjax:click', function() {
+
+            window['Page'].doPJAXClickAction();
+            
+                        $('body,html').animate({scrollTop:0},100);
+            
+
+        }).on('pjax:complete', function() {
+            window['Page'].doPJAXCompleteAction();
+            if ($(".post-position").length > 0){
+                window['Page'].doPJAXCompletePostAction();
+            }
+                                    $('#loading').addClass('hide');
+            
+                                    MathJax.Hub.Queue(["Typeset",MathJax.Hub,"body"]);
+            
+
+        })
+    </script>
+
+
+<!--主题组件js加载-->
+
+
+
+<!--pjax动画组件-->
+
+
+<script src="../../../usr/themes/handsome/assets/js/features/feather.min.js?v=6.0.020191205"></script>
+
+    <!--maxJax公式组件-->
+        <script src="https://cdn.staticfile.org/mathjax/2.7.0/MathJax.js" type="text/javascript"></script>
+    <script src="https://cdn.staticfile.org/mathjax/2.7.0/config/TeX-AMS-MML_SVG.js" type="text/javascript"></script>
+
+
+
+<!--lightgallery必备组件-->
+<script src="../../../usr/themes/handsome/assets/js/features/jquery.fancybox.min.js?v=6.0.020191205"></script>
+<script src="../../../usr/themes/handsome/assets/js/features/easypiechart.min.js?v=6.0.020191205"></script>
+
+
+    <!--component/comments.php 页面必需js（只有选择了原生评论的时候才会加载）-->
+    <script src="../../../usr/themes/handsome/assets/js/features/OwO.min.js?v=6.0.020191205"></script>
+    <!--component/comments.php 必需js结束-->
+
+
+<!--主题组件js加载结束-->
+
+<!--主题核心js-->
+    <script src="../../../usr/themes/handsome/assets/js/function.min.js?v=6.0.020191205"></script>
+    <script src="../../../usr/themes/handsome/assets/js/core.min.js?v=6.0.020191205"></script>
+
+
+
+
+    <script type="text/javascript">
+            </script>
+
+
+</body>
+</html><!--html end-->
+  	<!-- / footer -->
+
+
